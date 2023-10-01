@@ -1,0 +1,50 @@
+.task-contanier{
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    margin: 15px;
+    border: 2px solid  skyblue;
+    box-shadow: 2px 2px 8px 1px #f999bc; 
+    border-radius: 10px;
+    position: relative;
+}
+.task-title{
+    margin: 2px;
+    color:  #f95b95;
+    font-size: 26px;
+}
+.task-discription{
+    margin: 8px;
+   font-size: 18px;
+   word-wrap: break-word;
+}
+.task-priority{
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 100px;
+  text-align: center;
+  border-radius: 0 10px 0 10px;
+  background-color:  #f95b95;
+  color: white;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+.remove-task{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 19px;
+    cursor: pointer;
+    color: #f54b89;
+}
+
+
+.edit-task{
+    position: absolute;
+    bottom: 5px;
+    right: 40px;
+  font-size: 20px;
+    cursor: pointer;
+    color: #f54b89;
+}
