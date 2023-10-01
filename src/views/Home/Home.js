@@ -10,12 +10,12 @@ const Home = ()=>
 
     const [tasksList, setTasksList] = useState([]);
 
-    useEffect(()=>{
+    useEffect(() => {
         const getListFromLocalStroage=JSON.parse(localStorage.getItem('task'))
        if(getListFromLocalStroage && getListFromLocalStroage.length>0){
         setTasksList(getListFromLocalStroage)
        }
-    },[]) ;
+    }, []) ;
 
    const [isEdit, setIsEdit]=useState(false)
    const [title, setTitle]=useState('')
@@ -89,7 +89,7 @@ const Home = ()=>
      
       saveTOLocalStorage(newtask)
        
-      showToast('Task Added Successfully', 'success', 3000);
+      showToast('Target Added Successfully', 'success', 3000);
      
    }
 
@@ -128,7 +128,7 @@ const Home = ()=>
 
     setIsEdit(false)
 
-    showToast('Task Update Successfully', 'success', 3000);
+    showToast('Target Update Successfully', 'success', 3000);
 
 
    }
@@ -142,7 +142,7 @@ const Home = ()=>
 
     saveTOLocalStorage(tempArr)
 
-    showToast('Task Delete Successfully', 'alert', 3000);
+    showToast('Target Delete Successfully', 'alert', 3000);
   }
 
 
@@ -155,7 +155,7 @@ const Home = ()=>
             <div className='flex-contanier'>
                    <div className='add-task-list'>
                           <h1 className='text-center heading'>{ 
-                                isEdit?`Update Task`:' Add Your Target'
+                                isEdit?`Update Target`:' Add Your Target'
                             }</h1>
 
                             <div className='add-task'>
@@ -174,7 +174,8 @@ const Home = ()=>
                                          />
                                     <input type="text"
                                          value={priority}
-                                         onChange={(e)=>  setPriority(`${e.target.value}`)  }
+                                         onChange = {(e) =>  
+                                    setPriority(`${e.target.value}`)  }
                                          placeholder="Enter priority"
                                          className='task-input'
                                          />

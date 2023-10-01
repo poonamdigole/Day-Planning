@@ -48,6 +48,7 @@ color: rgb(42, 156, 202) ;
     border: none;
     transition: 2s;
 }
+
 .btn-task{
     display: block;
     color: white;
