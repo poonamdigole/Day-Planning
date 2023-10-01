@@ -61,6 +61,14 @@ color: rgb(42, 156, 202) ;
     border-radius: 15px;
     border: 2px solid  skyblue;
     box-shadow: 2px 2px 8px 1px #f999bc;
+    transition: 1s;
+}
+.btn-task:hover {
+  cursor: pointer;  
+  box-shadow: 4px 4px 5px 1px skyblue;
+ transform: scale(1.06);
+ border:1px solid gray;
+  
 }
 
 
